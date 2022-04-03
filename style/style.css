@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(185, 75%, 39%);
+}
+
+main{
+    position: relative;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.322);
+    background-image: url(../images/bg-pattern-card.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    padding: 30px 20px;
+    z-index: 10;
+
+}
+
+.profile p{
+    padding: 10px 0px;
+}
+.profile{
+    padding-top: 55px;
+    flex-direction: column;
+}
+.profile img{
+    
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.statics{
+    display: flex;
+    padding: 60px 20px 0px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.statics p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.statics span{
+    font-size: 0.8rem;
+}
+
+.statics div{
+    padding-left:40px;
+}
+.statics div:first-child{
+    padding-left: 0px;
+}
+.linha{
+    padding-top: 20px;
+}
+.linha::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom:90px;
+    left: 0;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 59%);
+}
+
+.circle-bottom{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(hsl(185, 59%, 53%), hsl(185, 75%, 39%));
+    clip-path: circle(50% at right bottom);
+}
+.circle-top{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(hsl(185, 59%, 53%), hsl(185, 75%, 39%));
+    clip-path: circle(50% at left top);
+}
